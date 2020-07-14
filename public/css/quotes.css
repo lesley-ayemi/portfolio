@@ -1,0 +1,94 @@
+
+#testimonials {border-top:1px #e5e5e5 solid}
+.cbp-qtrotator {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.cbp-qtrotator .cbp-qtcontent {
+	position: absolute;
+	min-height: 250px;
+	border-bottom: 4px solid #f4f4f4;
+	padding: 2em 0;
+	bottom: 0;
+	z-index: 0;
+	opacity: 0;
+	width: 100%;
+}
+
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	border-bottom: none;
+}
+
+.cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
+.no-js .cbp-qtrotator .cbp-qtcontent {
+	position: relative; 
+	z-index: 100;
+	pointer-events: auto;
+	opacity: 1;
+	height: 100%;
+	min-height: 250px;
+}
+
+.cbp-qtrotator .cbp-qtcontent:before,
+.cbp-qtrotator .cbp-qtcontent:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-qtrotator .cbp-qtcontent:after {
+	clear: both;
+}
+
+.cbp-qtprogress {
+	position: absolute;
+	background: #ccc;
+	height: 4px;
+	width: 0%;
+	bottom: 0;
+	z-index: 1000;
+}
+
+.cbp-qtrotator blockquote {
+	margin: 0;
+	padding: 0;
+}
+
+.cbp-qtrotator blockquote p {
+    font-size: 18px;
+    line-height: 29px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #333;
+    letter-spacing: 1px;
+	margin: 0.4em 0 1em;
+}
+
+.cbp-qtrotator blockquote footer {
+	font-size:14px;
+	font-family:'Montserrat', sans-serif
+}
+
+
+
+.cbp-qtrotator .cbp-qtcontent img {
+	float: right;
+	margin-left: 3em;
+	width: 200px;
+	height: 200px;
+	border-radius:999px
+}
+
+/* Example for media query */
+@media screen and (max-width: 30.6em) { 
+
+	.cbp-qtrotator {
+		font-size: 70%;
+	}
+
+	.cbp-qtrotator img {
+		width: 80px;
+	}
+
+}
